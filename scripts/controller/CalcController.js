@@ -20,7 +20,7 @@ class CalcController {
 
     copyToClipboard() {
         let input = document.createElement('input');
-        input = this.displayCalc;
+        input.value = this.displayCalc;
         document.body.appendChild(input); //ERRO
         input.select();
         document.execCommand('Copy');
